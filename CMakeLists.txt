@@ -31,7 +31,7 @@ foreach(source IN LISTS sources)
     message("${SmallArrow} ${source}")
 endforeach()
 
-message("\n${Block} Checking, is source dir equal to binary dir")
+message("\n${Block} Checking, build directory correct")
 if(PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
     message(FATAL_ERROR "${ErrorSmallArrow} You are building project in source directory! EXIT!")
 else()
